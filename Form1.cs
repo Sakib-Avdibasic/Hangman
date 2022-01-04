@@ -28,7 +28,7 @@ namespace HangmanApp
         {
             StreamReader sr = new StreamReader("../../../assets/words.txt");
 
-            words = sr.ReadToEnd().Split("\r\n").ToList();
+            words = sr.ReadToEnd().Split("\n").ToList();
             sr.Close();
             generatePrompt();
 
